@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://kit.fontawesome.com/284ca20c11.js" crossorigin="anonymous"></script>
+  <title>Desafio</title>
+</head>
+
+<body>
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1>Indice TEL</h1>
+      <p>Cotações sempre atualizados</p>
+    </div>
+  </header>
+  <div class="container">
+    <section class="mb-5">
+      <h3>Indice BOVESPA? O que é?</h3>
+      <p>Índice Bovespa (Ibovespa) é o mais importante indicador do desempenho médio das cotações das ações negociadas
+        na
+        B3 - Brasil, Bolsa, Balcão. É formado pelas ações com maior volume negociado nos últimos meses.</p>
+    </section>
+    <div class="box-stonk d-flex flex-column justify-content-center align-items-center">
+      <main>
+        <h4>Valor atual:</h4>
+        <h5>BOVESPA: <i class="fas fa-donate"></i><span id="price">Carregando</span></h5>
+      </main>
+      <h5 class="mb-1 mt-5">Escolha uma empresa para consultar seu valor atual</h5>
+      <section class="carousel d-flex justify-content-center align-items-center">
+        <a href="#">
+          <img src="img/appl2.png" alt="apple" width="100" height="100">
+          <span>AAPL</span>
+        </a>
+        <a href="#">
+          <img src="img/facebook2.png" alt="apple" width="100" height="100">
+          <span>FB</span>
+        </a>
+        <a href="#">
+          <img src="img/ibm2.png" alt="apple" width="100" height="100">
+          <span>IBM</span>
+        </a>
+        <a href="#">
+          <img src="img/itau2.png" alt="apple" width="100" height="100">
+          <span>ITUB4.SA</span>
+        </a>
+        <a href="#">
+          <img src="img/petrobras-logo-0.png" alt="apple" width="100" height="100">
+          <span>PETR4.SA</span>
+        </a>
+        <a href="#">
+          <img src="img/vale.png" alt="apple" width="100" height="100">
+          <span>VALE3.SA</span>
+        </a>
+      </section>
+
+      <section id="price_action" class="loading">
+        <h5 class="text-center">Resultado</h5>
+      </section>
+
+      <div id='loading' class="spinner-border text-primary loading" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="/scripts/index.js"></script>
+  <script src="slick-1.8.1/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.carousel').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 500,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: true
+            }
+          },
+        ]
+      });
+    });
+  </script>
+
+</body>
+
+</html>
