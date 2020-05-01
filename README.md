@@ -1,3 +1,4 @@
+
 # PontoTel challenge
 
 Desafio realizado para o processo de seleção da Pontotel.
@@ -11,7 +12,7 @@ Para instalar consulte:
 * [Git](https://git-scm.com/)
 * [Docker](https://www.docker.com/)
 
-### Configuração backend
+### Configuração backend :whale:
 Para uma perfeita instalação é necessário o git e o docker
 ```sh
 $ git clone git@github.com:CleytonRR/pontoTel.git
@@ -20,13 +21,13 @@ $ cd app
 $ docker build -t pontocotacao:latest .
 $ docker run -d -p 5000:5000 pontocotacao
 ```
-## Executando:
+## Executando: :fire:
 **Com o container docker em funcionamento**
 
 ### Frontend:
 basta abrir o index.html que está na pasta frontend
 
-### Documentação
+### Documentação :clipboard:
 Para consultar a documentação da API:
 basta acessar: http://0.0.0.0:5000/apidocs/
 
@@ -60,4 +61,5 @@ O desafio tinha de forma opcional a implementação de rotas cruds para algumas 
 - [ ] Cache
 - [ ] Tipagem
 - [x] Docker
+
 
