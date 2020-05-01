@@ -25,7 +25,7 @@ $ docker run -d -p 5000:5000 pontocotacao
 **Com o container docker em funcionamento**
 
 ### Frontend:
-basta abrir o index.html que está na pasta frontend
+basta abrir em um navegador o arquivo index.html que está na pasta frontend
 
 ### Documentação :clipboard:
 Para consultar a documentação da API:

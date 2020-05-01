@@ -44,7 +44,6 @@ imgs = document.querySelectorAll(".carousel a")
 for(var i = 0; i < imgs.length; i++) {
     imgs[i].addEventListener("click", function(e) {
         loading.remove('loading')
-        console.log(this.getElementsByTagName('span')[0].innerText)
         getPriceByName(this.getElementsByTagName('span')[0].innerText)
     })
 }
