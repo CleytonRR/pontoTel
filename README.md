@@ -33,7 +33,7 @@ basta acessar: http://0.0.0.0:5000/apidocs/
 
 
 **Observação**:
-O desafio tinha de forma opcional a implementação de rotas cruds para algumas entidades, eu fiz as rotas e o crud utilizando o banco postgres, porém tive dificuldades com o docker-compose, e não consegui implementar o banco de dados no container, **deixei as rotas de crud apenas para efeito de consulta**.
+O desafio tinha de forma opcional a implementação de rotas cruds para algumas entidades, eu fiz as rotas e o crud utilizando o banco postgres, porém tive dificuldades com o docker-compose, e não consegui implementar o banco de dados no container, **deixei as rotas e as configurações(models) de crud apenas para efeito de consulta**.
 
 ## Tecnologias utilizadas
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Framework web mínimo
